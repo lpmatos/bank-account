@@ -1,0 +1,28 @@
+version: "3.7"
+
+services:
+  bank-account:
+    container_name: ${CONTAINER_NAME}
+    env_file: ./.env
+    build:
+      context: ./${PATH_DOCKERFILE}
+      dockerfile: Dockerfile
+    entrypoint: >
+      /bin/sh -c "
+        set -e
+        ruby main.rb
+        /bin/bash || exit 0
+      "
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "500k"
+        max-file: "20"
+    networks:
+      - bank-account
+
+networks:
+  bank-account:
