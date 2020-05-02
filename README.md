@@ -164,10 +164,10 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 Hey!! If you like this project or if you find some bugs feel free to contact me in my channels:
 
-* Email: luccapsm@gmail.com
-* Website: https://github.com/lpmatos
-* Github: [@lpmatos](https://github.com/lpmatos)
-* LinkedIn: [@luccapessoa](https://linkedin.com/in/luccapessoa)
+> * Email: luccapsm@gmail.com
+> * Website: https://github.com/lpmatos
+> * Github: [@lpmatos](https://github.com/lpmatos)
+> * LinkedIn: [@luccapessoa](https://linkedin.com/in/luccapessoa)
 
 ## Show your support
 
