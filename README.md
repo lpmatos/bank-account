@@ -138,7 +138,7 @@ docker-compose down --rmi all
 > 5. Open a **Pull Request**.
 > 6. Wait for your pull request to be accepted.. 🚀
 >
-> Remember: There is no bad code, there are different views/versions of solving the same problem. 😊
+Remember: There is no bad code, there are different views/versions of solving the same problem. 😊
 
 ### Add to git and push
 
