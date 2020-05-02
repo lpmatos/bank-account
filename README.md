@@ -1,50 +1,51 @@
 <h1 align="center">Welcome to bank-account 👋</h1>
 
-<p>
+<p align="center">
+
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+
   <a href="https://github.com/lpmatos/bank-account" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
+
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
-</p>
 
-<p align="center">
-  <a href="https://github.com/lpmatos/back-account">
+  <a href="https://github.com/lpmatos/bank-account">
     <img alt="Open Source" src="https://badges.frapsoft.com/os/v1/open-source.svg?v=102">
   </a>
 
-  <a href="https://github.com/lpmatos/back-account/graphs/contributors">
-    <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/lpmatos/back-account">
+  <a href="https://github.com/lpmatos/bank-account/graphs/contributors">
+    <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/lpmatos/bank-account">
   </a>
 
-  <a href="https://github.com/lpmatos/back-account">
-    <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/lpmatos/back-account">
+  <a href="https://github.com/lpmatos/bank-account">
+    <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/lpmatos/bank-account">
   </a>
 
-  <a href="https://github.com/lpmatos/back-account">
-    <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/lpmatos/back-account">
+  <a href="https://github.com/lpmatos/bank-account">
+    <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/lpmatos/bank-account">
   </a>
 
-  <a href="https://github.com/lpmatos/back-account/stargazers">
-    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/lpmatos/back-account?style=social">
+  <a href="https://github.com/lpmatos/bank-account/stargazers">
+    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/lpmatos/bank-account?style=social">
   </a>
 
-  <a href="https://github.com/lpmatos/back-account/commits/master">
-    <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/lpmatos/back-account">
+  <a href="https://github.com/lpmatos/bank-account/commits/master">
+    <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/lpmatos/bank-account">
   </a>
 
-  <a href="https://github.com/lpmatos/back-account">
-    <img alt="Repository Size" src="https://img.shields.io/github/repo-size/lpmatos/back-account">
+  <a href="https://github.com/lpmatos/bank-account">
+    <img alt="Repository Size" src="https://img.shields.io/github/repo-size/lpmatos/bank-account">
   </a>
 
-  <a href="https://github.com/lpmatos/back-account/issues">
-    <img alt="Repository Issues" src="https://img.shields.io/github/issues/lpmatos/back-account">
+  <a href="https://github.com/lpmatos/bank-account/issues">
+    <img alt="Repository Issues" src="https://img.shields.io/github/issues/lpmatos/bank-account">
   </a>
 
-  <a href="https://github.com/lpmatos/back-account/blob/master/LICENSE">
-    <img alt="MIT License" src="https://img.shields.io/github/license/lpmatos/back-account">
+  <a href="https://github.com/lpmatos/bank-account/blob/master/LICENSE">
+    <img alt="MIT License" src="https://img.shields.io/github/license/lpmatos/bank-account">
   </a>
 </p>
 
@@ -62,7 +63,7 @@
 To use this repository you need to make a **git clone**:
 
 ```bash
-git clone --depth 1 https://github.com/lpmatos/back-account.git -b master
+git clone --depth 1 https://github.com/lpmatos/bank-account.git -b master
 ```
 
 This will give access on your **local machine** to this project.
@@ -164,7 +165,7 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/lpmatos"><img src="https://avatars2.githubusercontent.com/u/58797390?s=400&v=4" width="100px;" alt=""/><br /><sub><b>Lucca Pessoa</b></sub></a><br /><a href="https://github.com/lpmatos/back-account/commits?author=lpmatos" title="Code">💻</a></a></td>
+    <td align="center"><a href="https://github.com/lpmatos"><img src="https://avatars2.githubusercontent.com/u/58797390?s=400&v=4" width="100px;" alt=""/><br /><sub><b>Lucca Pessoa</b></sub></a><br /><a href="https://github.com/lpmatos/bank-account/commits?author=lpmatos" title="Code">💻</a></a></td>
   <tr>
 </table>
 
@@ -172,7 +173,7 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/lpmatos"><img src="https://avatars2.githubusercontent.com/u/58797390?s=400&v=4" width="100px;" alt=""/><br /><sub><b>Lucca Pessoa</b></sub></a><br /><a href="https://github.com/lpmatos/back-account/commits?author=lpmatos" title="Code">💻</a> <a href="https://github.com/lpmatos/back-account/commits?author=lpmatos" title="Design">🎨</a></td>
+    <td align="center"><a href="https://github.com/lpmatos"><img src="https://avatars2.githubusercontent.com/u/58797390?s=400&v=4" width="100px;" alt=""/><br /><sub><b>Lucca Pessoa</b></sub></a><br /><a href="https://github.com/lpmatos/bank-account/commits?author=lpmatos" title="Code">💻</a> <a href="https://github.com/lpmatos/bank-account/commits?author=lpmatos" title="Design">🎨</a></td>
   <tr>
 </table>
 
