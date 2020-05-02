@@ -11,8 +11,9 @@ class Log
 
   def initialize
     @log_file = @@log_file
-    @logger = Logger.new unless @log_file
+    @logger = Logger.new MultiIO.new(STDOUT) unless @log_file
     @logger = Logger.new MultiIO.new(STDOUT, File.open(@log_file, "a")) if @log_file
+
 
     @logger.level = Logger::INFO
 

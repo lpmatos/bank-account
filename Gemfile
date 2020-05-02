@@ -5,4 +5,5 @@ group :development do
   gem "rake"
   gem "yaml"
   gem "colorize"
+  gem "OptionParser"
 end
