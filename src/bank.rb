@@ -29,12 +29,17 @@ class BankAccount < BinarySearch
       when "5"
         system "clear" or system "cls"
       when "6"
+        puts Constants::Messages::PROGRAM_INFO
+      when "7"
         if @accounts.empty?
           puts Constants::Messages::BYE_BYE_WITHOUT_INFORMATION
         else
           puts Constants::Messages::BYE_BYE_WITH_INFORMATION
           @yml.save(@accounts)
         end
+        break
+      when "8"
+        puts Constants::Messages::BYE_BYE_WITH_INFORMATION
         break
       end
     end

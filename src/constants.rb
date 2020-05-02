@@ -1,3 +1,5 @@
+require_relative "version"
+
 module Constants
   INFORMATION_LEN = 5
   
@@ -22,7 +24,9 @@ Welcome to the bank!
 3. Edit Account
 4. Status Accounts
 5. Clean Shell Information
-6. Exit and Save
+6. Program Info
+7. Exit and Save
+8. Exit
 
 Enter with your choice:
     """
@@ -34,6 +38,14 @@ Bye bye! We are saving your data.
     BYE_BYE_WITHOUT_INFORMATION = """
 Bye bye! We had nothing to save.
   """
+
+    PROGRAM_INFO = """
+Author: Lucca Pessoa da Silva Matos
+Name: Bank Account
+Description: A simple Ruby Code
+Data: 02-05-2020
+Version: #{Program::Information::VERSION}
+"""
 
   end
 
