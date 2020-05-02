@@ -85,6 +85,10 @@ This will give access on your **local machine** to this project.
 
 > This is a simple Ruby project to create a back account register and save all information in a YML File. Your object is to practice this wonderful language.
 
+### Options
+
+![Alt text](docs/images/OPTIONS.PNG?raw=true "Usage")
+
 ### 🐋 Development with Docker
 
 Steps to build the Docker Image.
@@ -164,7 +168,7 @@ git push origin master
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
-## Author
+### Author
 
 👤 **Lucca Pessoa**
 
@@ -175,11 +179,11 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
 > * Github: [@lpmatos](https://github.com/lpmatos)
 > * LinkedIn: [@luccapessoa](https://linkedin.com/in/luccapessoa)
 
-## Show your support
+### Show your support
 
 Give a ⭐️ if this project helped you!
 
-## Project Status
+### Project Status
 
 * 🔛 In Production
 
