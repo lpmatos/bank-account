@@ -1,6 +1,3 @@
-# Base description
-desc "Default description."
-
 # Declare a Default Task.
 task default: [:helper]
 

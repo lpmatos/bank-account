@@ -7,7 +7,7 @@ LABEL maintainer="Lucca Pessoa da Silva Matos - luccapsm@gmail.com" \
         org.label-schema.release-data="02-05-2020" \
         org.label-schema.url="https://github.com/lpmatos/bank-account" \
         org.label-schema.ruby="https://www.ruby-lang.org/pt/" \
-        org.label-schema.name="Bank Account"
+        org.label-schema.name="Bank Account Manager"
 
 ENV HOME=/usr/src/code
 

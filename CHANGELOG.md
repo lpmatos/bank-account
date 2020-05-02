@@ -24,3 +24,4 @@ All important changes to this project will be added to this file! This changelog
   * Check if is null.
   * Check if exist. If not, create.
   * Check if is readable.
+* Create a beautiful README.md with HTML syntax.

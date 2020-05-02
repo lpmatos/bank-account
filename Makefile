@@ -11,12 +11,15 @@ CONTEXT_DOCKERFILE=./
 # CONTAINERS
 DOCKER_CONTAINER_LIST:=$(shell docker ps -aq)
 
+# PROJECT NAME
+PROJECT_NAME=back-account
+
 # =============================================================================
 # DOCKER BUILD
 # =============================================================================
 
 build:
-	docker image build --no-cache -t gitlab-ci-lint -f ${PATH_DOCKERFILE} ${CONTEXT_DOCKERFILE}
+	docker image build --no-cache -t ${PROJECT_NAME} -f ${PATH_DOCKERFILE} ${CONTEXT_DOCKERFILE}
 
 system:
 	docker system prune -af
@@ -48,4 +51,3 @@ down:
 
 delete:
 	docker-compose down --rmi all
-	
