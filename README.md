@@ -70,10 +70,6 @@ This will give access on your **local machine** to this project.
 
 > This is a simple Ruby project to create a back account register and save all information in a YML File. Your object is to practice this wonderful language.
 
-### 🏠 [Homepage](https://github.com/lpmatos/bank-account)
-
-### ✨ [Demo](https://github.com/lpmatos/bank-account)
-
 ### 🐋 Development with Docker
 
 Steps to build the Docker Image.
@@ -162,22 +158,6 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
 
 [![Facebook](https://github.frapsoft.com/social/facebook.png)](https://www.facebook.com/lucca.pessoa.9)
 [![Github](https://github.frapsoft.com/social/github.png)](https://github.com/lpmatos)
-
-### ✨ Contributors
-
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/lpmatos"><img src="https://avatars2.githubusercontent.com/u/58797390?s=400&v=4" width="100px;" alt=""/><br /><sub><b>Lucca Pessoa</b></sub></a><br /><a href="https://github.com/lpmatos/bank-account/commits?author=lpmatos" title="Code">💻</a></a></td>
-  <tr>
-</table>
-
-### 🐯 Autor
-
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/lpmatos"><img src="https://avatars2.githubusercontent.com/u/58797390?s=400&v=4" width="100px;" alt=""/><br /><sub><b>Lucca Pessoa</b></sub></a><br /><a href="https://github.com/lpmatos/bank-account/commits?author=lpmatos" title="Code">💻</a> <a href="https://github.com/lpmatos/bank-account/commits?author=lpmatos" title="Design">🎨</a></td>
-  <tr>
-</table>
 
 ### Author
 
