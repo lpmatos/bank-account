@@ -13,9 +13,17 @@ ENV HOME=/usr/src/code
 
 RUN set -ex && apk update
 
+RUN gem install rake bundle
+
 WORKDIR ${HOME}
 
 COPY [ "./code", "." ]
+
+COPY [ "./Gemfile", "." ]
+
+COPY [ "./Rakefile", "." ]
+
+RUN rake main:install
 
 ENTRYPOINT []
 

@@ -1,8 +1,9 @@
+require "colorize"
 require_relative "version"
 
 module Constants
   INFORMATION_LEN = 5
-  
+
   module Messages
     INFORMATION = """
 Please, enter with your information. We need:
@@ -17,18 +18,18 @@ In that exact order. Enter with your information:
     """
 
     WELCOME = """
-Welcome to the bank!
+#{"Welcome to the bank account registration!".colorize(:black).on_yellow.underline}
 
-1. Create New Account
-2. Review Your Account Information
-3. Edit Account
-4. Status Accounts
-5. Clean Shell Information
-6. Program Info
-7. Exit and Save
-8. Exit
+#{"1. Create New Account".colorize(:black).on_blue.underline}
+#{"2. Review Your Account Information".colorize(:black).on_blue.underline}
+#{"3. Edit Account".colorize(:black).on_blue.underline}
+#{"4. Status Accounts".colorize(:black).on_blue.underline}
+#{"5. Clean Shell Information".colorize(:black).on_blue.underline}
+#{"6. Program Info".colorize(:black).on_blue.underline}
+#{"7. Exit and Save".colorize(:black).on_blue.underline}
+#{"8. Exit".colorize(:black).on_blue.underline}
 
-Enter with your choice:
+#{"Enter with your choice".colorize(:black).on_white.underline}
     """
 
     BYE_BYE_WITH_INFORMATION = """

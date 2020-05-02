@@ -47,35 +47,32 @@ class BankAccount < BinarySearch
 
   private
 
-  def validate_information! content
-    raise ArgumentError.new("This Email is Invalid...") unless Validators::Email.is_valid_email? content["email"]
-    raise ArgumentError.new("This CPF is Invalid...") unless Validators::CPF.is_valid_cpf? content["cpf"]
-    raise ArgumentError.new("This CPF Alredy Exist...") if find(@cpfs, content["cpf"])
-    before = @accounts.length
-    @accounts << content
-    @cpfs << content["cpf"]
-    puts "\nNew account registration successful!" if @accounts.length > before
-    puts "\nRegistration failed..." if @accounts.length < before
+  def validate_account! account
+    raise ArgumentError.new("This Email is Invalid...") unless Validators::Email.is_valid_email? account["email"]
+    raise ArgumentError.new("This CPF is Invalid...") unless Validators::CPF.is_valid_cpf? account["cpf"]
+    raise ArgumentError.new("This CPF Alredy Exist...") if find(@cpfs, account["cpf"])
+    @accounts << account
+    @cpfs << account["cpf"]
+    puts "\nNew account registration successful!"
   end
 
   def get_information
-    account = []
+    informations = []
     puts Constants::Messages::INFORMATION
-    while info = gets.strip 
-      account[account.count] = info
-      break if account.count >= Constants::INFORMATION_LEN
+    while info = gets.strip
+      informations[informations.count] = info
+      break if informations.count >= Constants::INFORMATION_LEN
     end
-    return account
+    return informations
   end
 
   def new_account
-    account = get_information()
-    content = {"cpf" => account[0],
-                "name" => account[1],
-                "age" => account[2],
-                "email" => account[3],
-                "address" => account[4]}
-    validate_information!(content)
+    information = get_information()
+    validate_account!({"cpf" => information[0],
+                          "name" => information[1],
+                          "age" => information[2],
+                          "email" => information[3],
+                          "address" => information[4]})
   end
 
   def account_review
@@ -87,7 +84,7 @@ class BankAccount < BinarySearch
     puts "\nIn this moment we have #{@accounts.length} accounts."
   end
 
-  def edit 
+  def edit
     if @accounts.empty?
       puts "\nWe don't have data to update"
     else
@@ -108,7 +105,7 @@ class BankAccount < BinarySearch
         current_account[:email] = content[:email]
         current_account[:address] = content[:address]
         puts "\n\nSuccess Update!"
-      else    
+      else
         puts "\nThis CPF not Exist..."
       end
     end
