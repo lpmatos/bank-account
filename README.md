@@ -120,7 +120,7 @@ Down all services and delete all images.
 docker-compose down --rmi all
 ```
 
-### 🎒 How to contribute
+### How to contribute
 
 1. Make a **Fork**.
 2. Follow the project organization.
@@ -131,7 +131,7 @@ docker-compose down --rmi all
 
 Remember: There is no bad code, there are different views/versions of solving the same problem. 😊
 
-### 🔔 Add to git and push
+### Add to git and push
 
 You must send the project to your GitHub after the modifications
 
@@ -141,33 +141,26 @@ git commit -m "Added - Fixing somethings"
 git push origin master
 ```
 
-### 📋 Versioning
+### Versioning
 
 - [CHANGELOG](CHANGELOG.md)
 
-### 📜 License
+### License
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
-### ☎️ Contacts
-
-Hey!! If you like this project or if you find some bugs feel free to contact me in my channels:
-
-* **Email**: luccapsm@gmail.com
-* **Linkedin**: www.linkedin.com/in/lucca-pessoa-4abb71138/
-
-[![Facebook](https://github.frapsoft.com/social/facebook.png)](https://www.facebook.com/lucca.pessoa.9)
-[![Github](https://github.frapsoft.com/social/github.png)](https://github.com/lpmatos)
-
-### Author
+## Author
 
 👤 **Lucca Pessoa**
 
+Hey!! If you like this project or if you find some bugs feel free to contact me in my channels:
+
+* Email: luccapsm@gmail.com
 * Website: https://github.com/lpmatos
 * Github: [@lpmatos](https://github.com/lpmatos)
 * LinkedIn: [@luccapessoa](https://linkedin.com/in/luccapessoa)
 
-### Show your support
+## Show your support
 
 Give a ⭐️ if this project helped you!
 
