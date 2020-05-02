@@ -1,7 +1,7 @@
-require_relative "yml"
 require_relative "search"
-require_relative "constants"
-require_relative "validators"
+require_relative "reader/yml"
+require_relative "utils/constants"
+require_relative "utils/validators"
 
 class BankAccount < BinarySearch
 

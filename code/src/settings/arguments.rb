@@ -1,6 +1,6 @@
 require "optparse"
 require "colorize"
-require_relative "../version"
+require_relative "../utils/version"
 
 class Arguments
 
