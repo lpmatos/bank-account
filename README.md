@@ -49,8 +49,6 @@
   </a>
 </p>
 
-> This is a simple Ruby project to create a back account register and save all information in a YML File. Your object is to practice this wonderful language.
-
 <p align="center">
   <a href="#pre-requisites">Pre-Requisites</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#description">Description</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -58,7 +56,7 @@
   <a href="#how-to-contribute">How to contribute</a>
 </p>
 
-## Getting Started
+### Getting Started
 
 To use this repository you need to make a **git clone**:
 
@@ -68,22 +66,26 @@ git clone --depth 1 https://github.com/lpmatos/bank-account.git -b master
 
 This will give access on your **local machine** to this project.
 
+### Description
+
+> This is a simple Ruby project to create a back account register and save all information in a YML File. Your object is to practice this wonderful language.
+
 ### 🏠 [Homepage](https://github.com/lpmatos/bank-account)
 
 ### ✨ [Demo](https://github.com/lpmatos/bank-account)
 
-## 🐋 Development with Docker
+### 🐋 Development with Docker
 
 Steps to build the Docker Image.
 
-### Build
+#### Build
 
 ```bash
 docker image build -t <IMAGE_NAME> -f <PATH_DOCKERFILE> <PATH_CONTEXT_DOCKERFILE>
 docker image build -t <IMAGE_NAME> . (This context)
 ```
 
-### Run
+#### Run
 
 Steps to run the Docker Container.
 
@@ -102,7 +104,7 @@ winpty docker.exe container run -it --rm <IMAGE_NAME> <COMMAND>
 
 For more information, access the [Docker](https://docs.docker.com/) documentation or [this](docs/annotations/docker.md).
 
-## 🐋 Development with Docker Compose
+### 🐋 Development with Docker Compose
 
 Build and run a docker-compose.
 
@@ -122,7 +124,7 @@ Down all services and delete all images.
 docker-compose down --rmi all
 ```
 
-## 🎒 How to contribute
+### 🎒 How to contribute
 
 1. Make a **Fork**.
 2. Follow the project organization.
@@ -133,7 +135,7 @@ docker-compose down --rmi all
 
 Remember: There is no bad code, there are different views/versions of solving the same problem. 😊
 
-## 🔔 Add to git and push
+### 🔔 Add to git and push
 
 You must send the project to your GitHub after the modifications
 
@@ -143,15 +145,15 @@ git commit -m "Added - Fixing somethings"
 git push origin master
 ```
 
-## 📋 Versioning
+### 📋 Versioning
 
 - [CHANGELOG](CHANGELOG.md)
 
-## 📜 License
+### 📜 License
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
-## ☎️ Contacts
+### ☎️ Contacts
 
 Hey!! If you like this project or if you find some bugs feel free to contact me in my channels:
 
@@ -161,7 +163,7 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
 [![Facebook](https://github.frapsoft.com/social/facebook.png)](https://www.facebook.com/lucca.pessoa.9)
 [![Github](https://github.frapsoft.com/social/github.png)](https://github.com/lpmatos)
 
-## ✨ Contributors
+### ✨ Contributors
 
 <table>
   <tr>
@@ -169,7 +171,7 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
   <tr>
 </table>
 
-## 🐯 Autor
+### 🐯 Autor
 
 <table>
   <tr>
@@ -177,7 +179,7 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
   <tr>
 </table>
 
-## Author
+### Author
 
 👤 **Lucca Pessoa**
 
@@ -185,7 +187,7 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
 * Github: [@lpmatos](https://github.com/lpmatos)
 * LinkedIn: [@luccapessoa](https://linkedin.com/in/luccapessoa)
 
-## Show your support
+### Show your support
 
 Give a ⭐️ if this project helped you!
 
