@@ -1,7 +1,14 @@
-<h1 align="center">Welcome to bank-account 👋</h1>
+<p align="center">
+  <img alt="back-account" src="https://miro.medium.com/max/710/1*9hd_8qR0CMZ8L0pVbFLjDw.png" width="250px" float="center"/>
+</p>
+
+<h1 align="center">Welcome to Bank-Account 👋</h1>
 
 <p align="center">
+  <strong>Simple Ruby Project</strong>
+</p>
 
+<p align="center">
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
 
   <a href="https://github.com/lpmatos/bank-account" target="_blank">
