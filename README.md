@@ -2,10 +2,10 @@
   <img alt="back-account" src="https://miro.medium.com/max/710/1*9hd_8qR0CMZ8L0pVbFLjDw.png" width="250px" float="center"/>
 </p>
 
-<h1 align="center">Welcome to Bank-Account 👋</h1>
+<h1 align="center">Welcome to Bank-Account</h1>
 
 <p align="center">
-  <strong>Simple Ruby Project</strong>
+  <strong>Bank Account Manager</strong>
 </p>
 
 <p align="center">
