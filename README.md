@@ -213,10 +213,10 @@ Give a ⭐️ if this project helped you!
 
 ### TO-DO
 
-[] Change Dockerfile to Multi-stages.
-[] Fixing Some bugs in Application.
-[] Fixing input values from CLI.
-[] Call Log Dir, Log File and Log Info.
+* [] Change Dockerfile to Multi-stages.
+* [] Fixing Some bugs in Application.
+* [] Fixing input values from CLI.
+* [] Call Log Dir, Log File and Log Info.
 
 ---
 
