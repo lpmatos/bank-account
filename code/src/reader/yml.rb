@@ -2,18 +2,20 @@ require "yaml"
 
 class YMLReader
 
-  attr_reader :file
+  attr_reader :file, :log
 
-  def initialize file
+  def initialize file, log=nil
     @file = file
+    @log = log
     validate!
   end
 
   def open
     begin
+      @log.info("Open YML File")
       return YAML.load_file(File.join(File.dirname(__FILE__), @file))
     rescue => exception
-      puts "Could open the YAML File: #{exception.message}"
+      @log.error("Could open the YAML File: #{exception.message}")
     end
   end
 
@@ -21,6 +23,7 @@ class YMLReader
     unless content
       return nil
     else
+      @log.info("Save information in YML File")
       File.open(@file, "r+") do |file|
         file.write(content.to_yaml)
       end

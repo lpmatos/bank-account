@@ -15,10 +15,10 @@ if __FILE__ == $0
   Log.log_file = log_file
   logger = Log.instance
 
-  logger.info("Starting...")
+  logger.info("Starting Application...")
   logger.info(no_color)
   logger.info(verbose)
 
-  bank_account = BankAccount.new
+  bank_account = BankAccount.new(logger)
   bank_account.run()
 end

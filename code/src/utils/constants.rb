@@ -48,6 +48,26 @@ Data: 02-05-2020
 Version: #{Program::Information::VERSION}
 """
 
+    HELP = """
+  #{"Usage Exemple".colorize(:black).on_green.underline}: #{"ruby main.rb [global options]".colorize(:black).on_white.underline}
+
+  #{"Global options".colorize(:black).on_yellow.underline}
+
+  #{"-h          | --help".colorize(:black).on_white.underline}                #{"show Bank Account help.".colorize(:black).on_blue.underline}
+  #{"-n          | --no_color".colorize(:black).on_white.underline}              #{"don't color output. By defaults the output is colorized if a compatible terminal is detected.".colorize(:black).on_blue.underline}
+  #{"-log_dir    | --log_dir".colorize(:black).on_white.underline}               #{"LOG DIR is the log directory.".colorize(:black).on_blue.underline}
+  #{"-log_file   | --log_file".colorize(:black).on_white.underline}              #{"LOG FILE is the log file.".colorize(:black).on_blue.underline}
+  #{"-log_info   | --log_info".colorize(:black).on_white.underline}              #{"LOG INFO is the log info.".colorize(:black).on_blue.underline}
+  #{"-v          | --verbose".colorize(:black).on_white.underline}               #{"verbose mode.".colorize(:black).on_blue.underline}
+  #{"-V          | --version".colorize(:black).on_white.underline}               #{"print the version information.".colorize(:black).on_blue.underline}
+
+"""
+
+    BANK_ACCOUNT_VERSION = """
+  #{"Bank Account Version".colorize(:black).on_white.underline}: #{Program::Information::VERSION.colorize(:yellow)}
+
+"""
+
   end
 
 end

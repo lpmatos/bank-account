@@ -1,57 +1,26 @@
 require "optparse"
-require "colorize"
-require_relative "../utils/version"
+require_relative "../utils/constants"
 
 class Arguments
 
-  attr_reader :program_name
-
   def initialize
-    @program_name = File.basename(__FILE__).colorize(:yellow)
-    @program_version = Program::Information::VERSION.colorize(:yellow)
     @options = {
       verbose: false
     }
   end
 
   def command_line_parser
-    begin
-      OptionParser.new do |opts|
-        opts.banner = "Usage: example.rb [options]"
-        opts.on("-h", "--helper", "Show helper documentation") { |value| @options[:help] = helper() }
-        opts.on("-n", "--no-color", "Color Usage") { |value| @options[:no_color] = value }
-        opts.on("-l", "--log", "Log File") { |value| @options[:log] = value }
-        opts.on("--verbose", "If set, print verbose output") { |value| @options[:verbose] = true }
-        opts.on("--version", "Show Bank Account Version") { |value| @options[:version] = version() }
-      end.parse!
-      return @options
-    rescue => exception
-      puts "Invalid Arguments - #{exception}"
-      return nil
-    end
-  end
-
-  private
-
-  def helper
-    puts """
-  Command Line Helper to the Program - #{@program_name}
-  Usage Exemple: ruby example.rb [global options] [command [command options]] [PATH]
-  Global options:
-  -h          | --helper                show Bank Account help.
-  -n          | --no-color              don't color output. By defaults the output is colorized if a compatible terminal is detected.
-  -l          | --log                   LOG is the log file path.
-  -v          | --verbose               verbose mode.
-  -V          | --version               print the version information.
-  """
-    exit 1
-  end
-
-  def version
-    puts """
-  Bank Account Version: #{@program_version}
-    """
-    exit
+    OptionParser.new do |opts|
+      opts.banner = "Usage: main.rb [options]"
+      opts.on("-h", "--help", "Show help documentation") { |value| @options[:help] = puts Constants::Messages::HELP; exit 1 }
+      opts.on("-n", "--no_color", "Show puts without colors") { |value| @options[:no_color] = value }
+      opts.on("-log_dir", "--log_dir", "Log Directory") { |value| @options[:log_dir] = value }
+      opts.on("-log_file", "--log_file", "Log File") { |value| @options[:log_file] = value }
+      opts.on("-log_level", "--log_level", "Log Level") { |value| @options[:log_level] = value }
+      opts.on("-V", "--verbose", "If set, print verbose output") { |value| @options[:verbose] = true }
+      opts.on("-v", "--version", "Show Bank Account Version") { |value| @options[:version] = puts Constants::Messages::BANK_ACCOUNT_VERSION; exit }
+    end.parse!
+    return @options
   end
 
 end

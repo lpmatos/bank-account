@@ -5,12 +5,13 @@ require_relative "utils/validators"
 
 class BankAccount < BinarySearch
 
-  attr_reader :accounts, :cpfs
+  attr_reader :accounts, :cpfs, :log
 
-  def initialize
-    @yml = YMLReader.new("account.yml")
+  def initialize log=nil
     @accounts = []
     @cpfs = []
+    @log = log
+    @yml = YMLReader.new("account.yml", @log)
   end
 
   def run
