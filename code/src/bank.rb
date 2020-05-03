@@ -5,18 +5,18 @@ require_relative "utils/validators"
 
 class BankAccount < BinarySearch
 
-  attr_reader :accounts, :cpfs, :log
+  attr_reader :accounts, :cpfs, :logger, :color, :verbose
 
-  def initialize log=nil
-    @accounts = []
-    @cpfs = []
-    @log = log
-    @yml = YMLReader.new("account.yml", @log)
+  def initialize logger=nil, color, verbose
+    @accounts, @cpfs = [], []
+    @logger, @color, @verbose = logger, color, verbose
+    @yml = YMLReader.new("account.yml", @logger)
   end
 
   def run
     loop do
-      puts Constants::Messages::WELCOME
+      puts Constants::Messages::WELCOME_WITHOUT_COLOR unless @color
+      puts Constants::Messages::WELCOME_WITH_COLOR if @color
       input = gets.strip
       case input
       when "1"
@@ -33,14 +33,17 @@ class BankAccount < BinarySearch
         puts Constants::Messages::PROGRAM_INFO
       when "7"
         if @accounts.empty?
-          puts Constants::Messages::BYE_BYE_WITHOUT_INFORMATION
+          puts Constants::Messages::BYE_BYE_WITHOUT_INFORMATION_AND_WITHOUT_COLOR unless @color
+          puts Constants::Messages::BYE_BYE_WITHOUT_INFORMATION_AND_WITH_COLOR if @color
         else
-          puts Constants::Messages::BYE_BYE_WITH_INFORMATION
+          puts Constants::Messages::BYE_BYE_WITH_INFORMATION_AND_WITHOUT_COLOR unless @color
+          puts Constants::Messages::BYE_BYE_WITH_INFORMATION_AND_WITH_COLOR if @color
           @yml.save(@accounts)
         end
         break
       when "8"
-        puts Constants::Messages::BYE_BYE_WITH_INFORMATION
+        puts Constants::Messages::BYE_BYE_WITH_INFORMATION_AND_WITHOUT_COLOR unless @color
+        puts Constants::Messages::BYE_BYE_WITH_INFORMATION_AND_WITH_COLOR if @color
         break
       end
     end
@@ -59,7 +62,8 @@ class BankAccount < BinarySearch
 
   def get_information
     informations = []
-    puts Constants::Messages::INFORMATION
+    puts Constants::Messages::INFORMATION_WITHOUT_COLOR unless @color
+    puts Constants::Messages::INFORMATION_WITH_COLOR if @color
     while info = gets.strip
       informations[informations.count] = info
       break if informations.count >= Constants::INFORMATION_LEN

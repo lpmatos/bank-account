@@ -1,8 +1,8 @@
 arguments:
   - help
-  - no-color
-  - log-dir
-  - log-file
-  - log-info
+  - no_color
+  - log_dir
+  - log_file
+  - log_info
   - verbose
   - version

@@ -1,21 +1,17 @@
 class Configuration
 
-  attr_reader :log_dir, :log_file, :log_info, :no_color, :verbose
+  attr_reader :log, :color, :verbose
 
   def initialize
-    @log_dir = ENV["LOG_DIR"]
-    @log_file = ENV["LOG_FILE"]
-    @log_info = ENV["LOG_INFO"]
-    @no_color = ENV["NO_COLOR"]
+    @log_dir = ENV["LOG"]
+    @color = ENV["COLOR"]
     @verbose = ENV["VERBOSE"]
   end
 
   def variables
     return {
-      "log_dir" => @log_dir,
-      "log_file" => @log_file,
-      "log_info" => @log_info,
-      "no_color" => @no_color,
+      "log" => @log,
+      "color" => @color,
       "verbose" => @verbose
     }
   end

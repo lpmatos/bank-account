@@ -210,6 +210,7 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
 * [x] Call Log Dir, Log File and Log Info in arguments and config class.
 * [x] Adding help and bank version messages in constants module.
 * [x] Remove private methods in Arguments class and call code inside the options block.
+* [x] Check System plataform.
 * [] Fixing Some bugs in Application.
 * [] Fixing Information Input Validaiton.
 * [] Fixing input values from CLI.

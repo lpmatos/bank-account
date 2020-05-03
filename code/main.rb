@@ -8,17 +8,14 @@ if __FILE__ == $0
   arguments, configuration = Arguments.new, Configuration.new
   options = arguments.command_line_parser()
 
-  no_color = options["no-color"] ? options["no-color"] : configuration.no_color
-  verbose = options["verbose"] ? options["verbose"] : configuration.verbose
-  log_file = options["log"] ? options["log"] : configuration.log_file
+  log = options[:log] ? options[:log] : configuration.log
+  color = options[:color] ? options[:color] : configuration.color
+  verbose = options[:verbose] ? options[:verbose] : configuration.verbose
 
-  Log.log_file = log_file
-  logger = Log.instance
+  Log.log_file = log; logger = Log.instance
 
-  logger.info("Starting Application...")
-  logger.info(no_color)
-  logger.info(verbose)
+  logger.info("Starting Application...") if verbose
 
-  bank_account = BankAccount.new(logger)
+  bank_account = BankAccount.new(logger, color, verbose)
   bank_account.run()
 end

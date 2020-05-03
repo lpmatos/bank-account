@@ -5,19 +5,23 @@ module Constants
   INFORMATION_LEN = 5
 
   module Messages
-    INFORMATION = """
-Please, enter with your information. We need:
 
-1 - CPF
-2 - Name
-3 - Age
-4 - Email
-5 - Address
+      WELCOME_WITHOUT_COLOR = """
+Welcome to the bank account registration!
 
-In that exact order. Enter with your information:
-    """
+1. Create New Account
+2. Review Your Account Information
+3. Edit Account
+4. Status Accounts
+5. Clean Shell Information
+6. Program Info
+7. Exit and Save
+8. Exit
 
-    WELCOME = """
+Enter with your choice
+"""
+
+    WELCOME_WITH_COLOR = """
 #{"Welcome to the bank account registration!".colorize(:black).on_yellow.underline}
 
 #{"1. Create New Account".colorize(:black).on_blue.underline}
@@ -30,15 +34,49 @@ In that exact order. Enter with your information:
 #{"8. Exit".colorize(:black).on_blue.underline}
 
 #{"Enter with your choice".colorize(:black).on_white.underline}
-    """
+"""
 
-    BYE_BYE_WITH_INFORMATION = """
+    INFORMATION_WITHOUT_COLOR = """
+Please, enter with your information. We need:
+
+1 - CPF
+2 - Name
+3 - Age
+4 - Email
+5 - Address
+
+In that exact order. Enter with your information:
+"""
+
+    INFORMATION_WITH_COLOR = """
+#{"Please, enter with your information. We need".colorize(:black).on_yellow.underline}:
+
+#{"1 - CPF".colorize(:black).on_blue.underline}
+#{"2 - Name".colorize(:black).on_blue.underline}
+#{"3 - Age".colorize(:black).on_blue.underline}
+#{"4 - Email".colorize(:black).on_blue.underline}
+#{"5 - Address".colorize(:black).on_blue.underline}
+
+#{"In that exact order. Enter with your information:".colorize(:black).on_white.underline}
+"""
+
+    BYE_BYE_WITH_INFORMATION_AND_WITHOUT_COLOR = """
 Bye bye! We are saving your data.
-  """
 
-    BYE_BYE_WITHOUT_INFORMATION = """
+"""
+
+    BYE_BYE_WITH_INFORMATION_AND_WITH_COLOR = """
+#{"Bye bye! We are saving your data.".colorize(:black).on_white.underline}
+
+"""
+
+    BYE_BYE_WITHOUT_INFORMATION_AND_WITHOUT_COLOR = """
 Bye bye! We had nothing to save.
-  """
+"""
+
+    BYE_BYE_WITHOUT_INFORMATION_AND_WITH_COLOR = """
+#{"Bye bye! We had nothing to save.".colorize(:black).on_white.underline}
+    """
 
     PROGRAM_INFO = """
 Author: Lucca Pessoa da Silva Matos
@@ -54,12 +92,10 @@ Version: #{Program::Information::VERSION}
   #{"Global options".colorize(:black).on_yellow.underline}
 
   #{"-h          | --help".colorize(:black).on_white.underline}                #{"show Bank Account help.".colorize(:black).on_blue.underline}
-  #{"-n          | --no_color".colorize(:black).on_white.underline}              #{"don't color output. By defaults the output is colorized if a compatible terminal is detected.".colorize(:black).on_blue.underline}
-  #{"-log_dir    | --log_dir".colorize(:black).on_white.underline}               #{"LOG DIR is the log directory.".colorize(:black).on_blue.underline}
-  #{"-log_file   | --log_file".colorize(:black).on_white.underline}              #{"LOG FILE is the log file.".colorize(:black).on_blue.underline}
-  #{"-log_info   | --log_info".colorize(:black).on_white.underline}              #{"LOG INFO is the log info.".colorize(:black).on_blue.underline}
-  #{"-v          | --verbose".colorize(:black).on_white.underline}               #{"verbose mode.".colorize(:black).on_blue.underline}
-  #{"-V          | --version".colorize(:black).on_white.underline}               #{"print the version information.".colorize(:black).on_blue.underline}
+  #{"-log        | --log".colorize(:black).on_white.underline}                 #{"enable log file.".colorize(:black).on_blue.underline}
+  #{"-c          | --color".colorize(:black).on_white.underline}               #{"color output.".colorize(:black).on_blue.underline}
+  #{"-v          | --verbose".colorize(:black).on_white.underline}             #{"verbose mode.".colorize(:black).on_blue.underline}
+  #{"-V          | --version".colorize(:black).on_white.underline}             #{"print the version information.".colorize(:black).on_blue.underline}
 
 """
 
