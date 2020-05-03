@@ -207,10 +207,12 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
 
 * [x] Change Dockerfile to Multi-stages.
 * [x] Create User in Dockerfile.
+* [x] Call Log Dir, Log File and Log Info in arguments and config class.
+* [x] Adding help and bank version messages in constants module.
+* [x] Remove private methods in Arguments class and call code inside the options block.
 * [] Fixing Some bugs in Application.
 * [] Fixing Information Input Validaiton.
 * [] Fixing input values from CLI.
-* [] Call Log Dir, Log File and Log Info.
 
 ### Show your support
 
