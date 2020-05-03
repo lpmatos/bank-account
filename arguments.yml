@@ -1,0 +1,6 @@
+arguments:
+  - help
+  - no-color
+  - log
+  - verbose
+  - version
