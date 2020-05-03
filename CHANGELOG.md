@@ -2,6 +2,14 @@
 
 All important changes to this project will be added to this file! This changelog will be based on [Keep a change log](http://keepachangelog.com/)
 
+## 0.1.0 - Dockerfile support - [27-04-2020]
+
+### Added
+
+* Dockerfile with multi-stages.
+* User in Dockerfile.
+* Script docker-entrypoint.sh.
+
 ## 0.1.0 - Just Initial Adding Files - [27-04-2020]
 
 ### Added
