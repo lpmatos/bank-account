@@ -15,15 +15,20 @@ class Arguments
   end
 
   def command_line_parser
-    OptionParser.new do |opts|
-      opts.banner = "Usage: example.rb [options]"
-      opts.on("-h", "--helper", "Show helper documentation") { |value| @options[:help] = helper() }
-      opts.on("-n", "--no-color", "Color Usage") { |value| @options[:nocolor] = value }
-      opts.on("-l", "--log", "Log File") { |value| @options[:log] = value }
-      opts.on("--verbose", "If set, print verbose output") { |value| @options[:verbose] = true }
-      opts.on("--version", "Show Bank Account Version") { |value| @options[:version] = version() }
-    end.parse!
-    return @options
+    begin
+      OptionParser.new do |opts|
+        opts.banner = "Usage: example.rb [options]"
+        opts.on("-h", "--helper", "Show helper documentation") { |value| @options[:help] = helper() }
+        opts.on("-n", "--no-color", "Color Usage") { |value| @options[:no_color] = value }
+        opts.on("-l", "--log", "Log File") { |value| @options[:log] = value }
+        opts.on("--verbose", "If set, print verbose output") { |value| @options[:verbose] = true }
+        opts.on("--version", "Show Bank Account Version") { |value| @options[:version] = version() }
+      end.parse!
+      return @options
+    rescue => exception
+      puts "Invalid Arguments - #{exception}"
+      return nil
+    end
   end
 
   private

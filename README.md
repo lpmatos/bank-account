@@ -2,10 +2,10 @@
   <img alt="back-account" src="https://miro.medium.com/max/710/1*9hd_8qR0CMZ8L0pVbFLjDw.png" width="250px" float="center"/>
 </p>
 
-<h1 align="center">Welcome to Bank-Account</h1>
+<h1 align="center">Welcome to Bank-Account Manager</h1>
 
 <p align="center">
-  <strong>Bank Account Manager</strong>
+  <strong>This is a simple Bank Account Manager build in Ruby</strong>
 </p>
 
 <p align="center">
@@ -80,6 +80,30 @@ git clone --depth 1 https://github.com/lpmatos/bank-account.git -b master
 ```
 
 This will give access on your **local machine** to this project.
+
+### Pre Requisites
+
+To this project you yeed:
+
+* Ruby 2.6.5.
+* Windows or Linux System.
+* Docker and Docker Compose.
+* Install all Ruby Dependencies (gems) in Gemfile.
+* Bundle Gem.
+
+### Built with
+
+- Dev Tools
+  - [Ruby](https://www.ruby-lang.org/pt/)
+  - [Makefile](https://www.gnu.org/software/make/manual/make.html)
+
+### How to use it?
+
+1. Run the script.
+2. Follow all step.
+3. Profit.
+
+Press CTRL + C to stop it.
 
 ### Description
 
