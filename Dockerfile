@@ -1,6 +1,19 @@
 ARG RUBY_VERSION=2.6.5-alpine3.10
 
-FROM ruby:${RUBY_VERSION}
+FROM ruby:${RUBY_VERSION} as base
+FROM base as builder
+
+RUN gem install rake bundle
+
+COPY [ "./Gemfile", "." ]
+COPY [ "./Rakefile", "." ]
+
+RUN rake main:install && \
+    rm -rf /usr/local/bundle/cache/*.gem && \
+    find /usr/local/bundle/gems/ -name "*.c" -delete && \
+    find /usr/local/bundle/gems/ -name "*.o" -delete
+
+FROM base
 
 LABEL maintainer="Lucca Pessoa da Silva Matos - luccapsm@gmail.com" \
         org.label-schema.version="1.0.0" \
@@ -12,19 +25,21 @@ LABEL maintainer="Lucca Pessoa da Silva Matos - luccapsm@gmail.com" \
 ENV HOME=/usr/src/code
 
 RUN set -ex && apk update
-
-RUN gem install rake bundle
+RUN apk add --update --no-cache \
+      'su-exec>=0.2'
+RUN addgroup -g 1000 ruby && adduser -u 999 -G ruby -h ${HOME} -s /bin/sh -D ruby && \
+    mkdir -p ${HOME} && chown -hR ruby:ruby ${HOME}
 
 WORKDIR ${HOME}
 
-COPY [ "./code", "." ]
+USER ruby
 
-COPY [ "./Gemfile", "." ]
+COPY --from=builder [ "/usr/local/bundle/", "/usr/local/bundle/" ]
+COPY --chown=ruby:ruby [ "code", "." ]
+COPY [ "./docker-entrypoint.sh", "/usr/local/bin/" ]
 
-COPY [ "./Rakefile", "." ]
+RUN find ./ -iname "*.rb" -type f -exec chmod a+x {} \; -exec echo {} \;;
 
-RUN rake main:install
+ENTRYPOINT [ "docker-entrypoint.sh" ]
 
-ENTRYPOINT []
-
-CMD []
+CMD [ "ruby", "./main.rb", "--help" ]

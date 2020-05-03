@@ -205,7 +205,8 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
 
 ### TO-DO
 
-* [] Change Dockerfile to Multi-stages.
+* [x] Change Dockerfile to Multi-stages.
+* [x] Create User in Dockerfile.
 * [] Fixing Some bugs in Application.
 * [] Fixing input values from CLI.
 * [] Call Log Dir, Log File and Log Info.
