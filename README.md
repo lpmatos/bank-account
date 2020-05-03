@@ -211,6 +211,13 @@ Give a ⭐️ if this project helped you!
 
 * 🔛 In Production
 
+### TO-DO
+
+[] Change Dockerfile to Multi-stages.
+[] Fixing Some bugs in Application.
+[] Fixing input values from CLI.
+[] Call Log Dir, Log File and Log Info.
+
 ---
 
 <p align="center">Feito com ❤️ by <strong>Lucca Pessoa :wave:</p>
