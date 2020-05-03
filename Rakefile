@@ -9,7 +9,7 @@ end
 # Create Principal Task with namespace
 namespace :main do
   # A Short description about this Task.
-  desc "Base Rakefile to Ruby."
+  desc "Base Rakefile to Install all Ruby Gems used in this code."
   # Create Task Install
   task :install do
     puts "Installing Packages with Bundle..."

@@ -97,13 +97,13 @@ To this project you yeed:
   - [Ruby](https://www.ruby-lang.org/pt/)
   - [Makefile](https://www.gnu.org/software/make/manual/make.html)
 
-### How to use it?
+### How to use this script?
 
-1. Run the script.
-2. Follow all step.
+1. Run the script with ruby command.
+2. Follow all steps shown on the console.
 3. Profit.
 
-Press CTRL + C to stop it.
+Press CTRL + C to stop it or 8 to exit.
 
 ### Description
 
