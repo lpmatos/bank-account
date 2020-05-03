@@ -203,6 +203,13 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
 > * Github: [@lpmatos](https://github.com/lpmatos)
 > * LinkedIn: [@luccapessoa](https://linkedin.com/in/luccapessoa)
 
+### TO-DO
+
+* [] Change Dockerfile to Multi-stages.
+* [] Fixing Some bugs in Application.
+* [] Fixing input values from CLI.
+* [] Call Log Dir, Log File and Log Info.
+
 ### Show your support
 
 Give a ⭐️ if this project helped you!
@@ -210,13 +217,6 @@ Give a ⭐️ if this project helped you!
 ### Project Status
 
 * 🔛 In Production
-
-### TO-DO
-
-* [] Change Dockerfile to Multi-stages.
-* [] Fixing Some bugs in Application.
-* [] Fixing input values from CLI.
-* [] Call Log Dir, Log File and Log Info.
 
 ---
 
